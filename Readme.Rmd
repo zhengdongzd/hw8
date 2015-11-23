@@ -1,0 +1,45 @@
+---
+title: "Homework8"
+author: "Zheng Dong"
+date: "20th,Nov 2015"
+output: 
+  html_document: 
+    keep_md: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Package Installation
+We will use the `devtools` package to facilitate package development. `Devtools` and my package can be installed with the following commands, and both could be loaded with `library` command.
+
+```{r, tidy=TRUE, message=FALSE}
+library(devtools)
+```
+
+```{r, tidy=TRUE, message=FALSE}
+devtools::install_github("zhengdong91/hw8")
+library(hw8)
+```
+
+## Function Testing
+
+```{}
+
+```
+
+```{}
+
+```
+
+```{}
+
+```
+
+
+#### Some useful links:
+
+  + [data-raw](https://github.com/jennybc/candy/tree/master/data-raw)
+  + [explore and clean dataset](https://github.com/jennybc/candy/blob/master/data-raw/00_explore-raw.R)
+  + [An introduction to data cleaning with R](https://cran.r-project.org/doc/contrib/de_Jonge+van_der_Loo-Introduction_to_data_cleaning_with_R.pdf)
