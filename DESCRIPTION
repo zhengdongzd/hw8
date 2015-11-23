@@ -1,8 +1,20 @@
 Package: hw8
-Title: What the Package Does (one line, title case)
+Title: For STAT547 HW8
 Version: 0.0.0.9000
-Authors@R: person("First", "Last", email = "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
-Depends: R (>= 3.2.2)
-License: What license is it under?
+Authors@R: person("Zheng", "Dong", email = "zhdong@cs.ubc.ca", role = c("aut", "cre"))
+Description: Have some functions with gapminder dataset to find out top 20 gdppercap, 
+             and calculate the quantiles of any numeric data. Also implemented the funcyions
+             Jenny shared during our class.
+Depends: 
+    R (>= 3.2.2)
+License: MIT + file LICENSE
 LazyData: true
+RoxygenNote: 5.0.0
+Suggests: testthat,
+    knitr,
+    rmarkdown
+Imports: dplyr,
+    gapminder
+VignetteBuilder: knitr
+URL: https://github.com/zhengdong91/hw8
+BugReports: https://github.com/zhengdong91/hw8/issues
