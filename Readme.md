@@ -18,7 +18,7 @@ devtools::install_github("zhengdong91/hw8")
 #> Installing hw8
 #> "G:/R/R-32~1.2/bin/x64/R" --no-site-file --no-environ --no-save  \
 #>   --no-restore CMD INSTALL  \
-#>   "C:/Users/ZhengD/AppData/Local/Temp/RtmpAh0grK/devtools72fc2db12f61/zhengdong91-hw8-57564fa"  \
+#>   "C:/Users/ZhengD/AppData/Local/Temp/RtmpmSH8OS/devtools4e181d42f47/zhengdong91-hw8-06da6a9"  \
 #>   --library="G:/R/R-3.2.2/library" --install-tests
 library(hw8)
 library(gapminder)
@@ -26,6 +26,60 @@ library(gapminder)
 
 Function Testing
 ----------------
+
+``` r
+Top20GdpPercap(2002)
+```
+
+| country          |  gdpPercap|
+|:-----------------|----------:|
+| Norway           |   44683.98|
+| United States    |   39097.10|
+| Singapore        |   36023.11|
+| Kuwait           |   35110.11|
+| Switzerland      |   34480.96|
+| Ireland          |   34077.05|
+| Netherlands      |   33724.76|
+| Canada           |   33328.97|
+| Austria          |   32417.61|
+| Denmark          |   32166.50|
+| Iceland          |   31163.20|
+| Australia        |   30687.75|
+| Belgium          |   30485.88|
+| Hong Kong, China |   30209.02|
+| Germany          |   30035.80|
+| United Kingdom   |   29479.00|
+| Sweden           |   29341.63|
+| France           |   28926.03|
+| Japan            |   28604.59|
+| Finland          |   28204.59|
+
+``` r
+qdiff1(gapminder$lifeExp, probs = c(0.25, 0.75))
+#> [1] 22.6475
+qdiff1(gapminder$lifeExp, probs = c(0, 1))
+#> [1] 59.004
+```
+
+``` r
+freq_out(iris$Species)
+#> Source: local data frame [3 x 2]
+#> 
+#>            x     n
+#>       (fctr) (int)
+#> 1     setosa    50
+#> 2 versicolor    50
+#> 3  virginica    50
+```
+
+``` r
+a <- factor(c("character", "hits", "your", "eyeballs"))
+b <- factor(c("but", "integer", "where it", "counts"))
+fbind(a, b)
+#> [1] character hits      your      eyeballs  but       integer   where it 
+#> [8] counts   
+#> Levels: but character counts eyeballs hits integer where it your
+```
 
 Conclusion
 ----------
