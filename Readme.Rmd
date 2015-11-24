@@ -22,11 +22,31 @@ library(devtools)
 ```
 
 ```{r, tidy=TRUE}
-#load_all()
-devtools::install_github("zhengdong91/hw8")
+load_all()
+#devtools::install_github("zhengdong91/hw8")
 library(hw8)
 library(gapminder)
 ```
+
+```{r, tidy=TRUE}
+Top20GdpPercap(2002)
+```
+
+```{r, tidy=TRUE}
+qdiff1(gapminder$lifeExp, probs = c(0.25, 0.75))
+qdiff1(gapminder$lifeExp, probs = c(0, 1))
+```
+
+```{r, tidy=TRUE}
+freq_out(iris$Species)
+```
+
+```{r, tidy=TRUE}
+a <- factor(c("character", "hits", "your", "eyeballs"))
+b <- factor(c("but", "integer", "where it", "counts"))
+fbind(a, b)
+```
+
 
 ## Function Testing
 

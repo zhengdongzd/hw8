@@ -3,6 +3,6 @@
 export(Top20GdpPercap)
 export(fbind)
 export(freq_out)
-export(Quantiles)
+export(qdiff1)
 import(dplyr)
 import(gapminder)
