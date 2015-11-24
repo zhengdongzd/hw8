@@ -1,7 +1,8 @@
 #' Select countries with the highest gdpPercap in a particular year
 #'
 #' @param input_year numeric
-#'
+#' @import dplyr
+#' @import gapminder
 #' @return dataframe
 #' @export
 #'
@@ -19,6 +20,6 @@ Top20GdpPercap <- function(input_year) {
   }
   lifet <- gapminder::gapminder %>% filter(year == input_year) %>% droplevels() %>%
     select(country, gdpPercap) %>% arrange(-gdpPercap)
-  
+
   knitr::kable(lifet[1:20, ])
 }

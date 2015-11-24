@@ -22,8 +22,8 @@ library(devtools)
 ```
 
 ```{r, tidy=TRUE}
-load_all()
-# devtools::install_github("zhengdong91/hw8")
+#load_all()
+devtools::install_github("zhengdong91/hw8")
 library(hw8)
 library(gapminder)
 ```
@@ -32,28 +32,7 @@ library(gapminder)
 
 There are four functions in the package, we designed `Quantiles` and `Top20GdpPercap` functions to deal with the gapminder dataset, `Quantiles` return the difference of a numeric variable, and `Top20GdpPercap` return the top 20 GdpPercap countries in a particular year. I also inplemented two functions `fbind` and `freq_out` Jenny shared with us in the classes as a practice. 
 
-```{r, tidy=TRUE}
-Top20GdpPercap(2002)
-```
-
-
-```{r, tidy=TRUE}
-qdiff1(gapminder$lifeExp, probs = c(0.25, 0.75))
-qdiff1(gapminder$lifeExp, probs = c(0, 1))
-```
-
-```{r, tidy=TRUE}
-a <- factor(c("character", "hits", "your", "eyeballs"))
-b <- factor(c("but", "integer", "where it", "counts"))
-fbind(a, b)
-```
-
-```{r, tidy=TRUE}
-freq_out(iris$Species)
-```
 
 #### Some useful links:
-
-  + [data-raw](https://github.com/jennybc/candy/tree/master/data-raw)
-  + [explore and clean dataset](https://github.com/jennybc/candy/blob/master/data-raw/00_explore-raw.R)
-  + [An introduction to data cleaning with R](https://cran.r-project.org/doc/contrib/de_Jonge+van_der_Loo-Introduction_to_data_cleaning_with_R.pdf)
++ [Write your own R package, Part One](https://stat545-ubc.github.io/packages04_foofactors-package-01.html)
++ [Write your own R package, Part Two](https://stat545-ubc.github.io/packages05_foofactors-package-02.html)
