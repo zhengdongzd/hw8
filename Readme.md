@@ -11,9 +11,15 @@ library(devtools)
 ```
 
 ``` r
-load_all()
-#> Loading hw8
-# devtools::install_github('zhengdong91/hw8')
+# load_all()
+devtools::install_github("zhengdong91/hw8")
+#> Using github PAT from envvar GITHUB_PAT
+#> Downloading GitHub repo zhengdong91/hw8@master
+#> Installing hw8
+#> "G:/R/R-32~1.2/bin/x64/R" --no-site-file --no-environ --no-save  \
+#>   --no-restore CMD INSTALL  \
+#>   "C:/Users/ZhengD/AppData/Local/Temp/RtmpghSg2G/devtoolsb01840067a28/zhengdong91-hw8-7c3bd08"  \
+#>   --library="G:/R/R-3.2.2/library" --install-tests
 library(hw8)
 library(gapminder)
 ```

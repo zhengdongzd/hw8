@@ -22,8 +22,8 @@ library(devtools)
 ```
 
 ```{r, tidy=TRUE}
-load_all()
-#devtools::install_github("zhengdong91/hw8")
+#load_all()
+devtools::install_github("zhengdong91/hw8")
 library(hw8)
 library(gapminder)
 ```
